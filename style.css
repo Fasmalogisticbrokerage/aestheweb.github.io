@@ -1,0 +1,29 @@
+
+
+.jumbotron{
+	margin-top: 100px
+}
+
+.bg1{
+	background-image: url("img/1.jpg");
+	background-size: 700px;
+	background-repeat: no-repeat;
+	padding: 220px
+}
+
+p#head.text-wrap.text-lg-start.fs-5.mt-5{
+	margin-top: 700px
+}
+
+a .nav-link {
+	color: #73c5ff
+}
+
+#services {
+	margin-top: 25px;
+	margin-bottom: 80px;
+}
+
+#contact{
+	margin-top: 50px;
+}
