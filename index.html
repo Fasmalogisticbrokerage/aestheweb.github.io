@@ -84,25 +84,26 @@
 <strong>Terimakasih!</strong> Selamat, Anda Telah Menabung.
 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>
-<form name="keluarga-bahagia">
-<div class="mb-3">
-<label for="name" class="form-label">Nama Lengkap</label>
-<input name="namalengkap" type="namalengkap" placeholder="namalengkap" required>
-</div>
-<div class="mb-3">
-<label for="alamatlengkap" class="form-label">Alamat Lengkap</label>
-<input name="alamatlengkap" type="alamatlengkap" placeholder="alamatlengkap" required>
-</div>
-<div class="mb-3">
-<label for="jenislimbah" class="form-label">Jenis Limbah</label>
-<input name="jenislimbah" type="jenislimbah" placeholder="jenislimbah" required>
-</div>
-<button type="submit" class="d-grid gap-2 col-6 mx-auto btn btn-warning btn-kirim rounded-pill">Menabung</button>
-<button class="btn btn-primary btn-loading d-none" type="button" disabled>
-<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-Loading...
-</button>
-</form>
+            <form name="wpu-contact-form">
+              <div class="mb-3">
+                <label for="name" class="form-label">Nama Lengkap</label>
+                <input type="text" class="form-control" id="name" aria-describedby="name" name="namalengkap" />
+              </div>
+              <div class="mb-3">
+                <label for="alamatlengkap" class="form-label">Email</label>
+                <input type="text" class="form-control" id="alamatlengkap" aria-describedby="alamatlengkap" name="alamatlengkap" />
+              </div>
+              <div class="mb-3">
+                <label for="jenislimbah" class="form-label">Pesan</label>
+                <textarea class="form-control" id="jenislimbah" rows="3" name="jenislimbah"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
+
+              <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+              </button>
+            </form>
 </div>
 </div>
 </div>
@@ -408,7 +409,7 @@ duration: 3000,
 </script>
 <script>
 const scriptURL = 'https://script.google.com/macros/s/AKfycbzRRXN0So30g1dAux4K4dfgrOFwDbAFYVpK86uTeqDVL3ro00JEC8YN5JSgKEjRGoQN/exec';
-const form = document.forms['keluarga-bahagia'];
+const form = document.forms['wpu-contact-form'];
 const btnKirim = document.querySelector('.btn-kirim');
 const btnLoading = document.querySelector('.btn-loading');
 const myAlert = document.querySelector('.my-alert');
